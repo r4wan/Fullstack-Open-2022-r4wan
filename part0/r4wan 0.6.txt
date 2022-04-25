@@ -1,0 +1,10 @@
+title r4wan 0.5
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note right of browser:
+Content & Timestamp sent to server as JSON
+end note
+server-->browser: Server responds with code 201 created
+note right of browser:
+redrawNotes() will rerender the note list on page
+end note
